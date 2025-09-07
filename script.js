@@ -2,11 +2,11 @@ const video = document.getElementById('video');
 
 // AIモデルの読み込み（感情、顔のランドマークなどを認識するモデル）
 Promise.all([
-    faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-    faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-    faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-    faceapi.nets.faceExpressionNet.loadFromUri('/models')
-]).then(startVideo);
+    faceapi.nets.tinyFaceDetector.loadFromUri('models'),
+    faceapi.nets.faceLandmark68Net.loadFromUri('models'),
+    faceapi.nets.faceRecognitionNet.loadFromUri('models'),
+    faceapi.nets.faceExpressionNet.loadFromUri('models')
+])
 
 // ウェブカメラを起動する関数
 async function startVideo() {
