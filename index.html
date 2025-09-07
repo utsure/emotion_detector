@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>リアルタイム感情認識カメラ</title>
+    <style>
+        /* 簡単なスタイル設定 */
+        body { display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background: #2c3e50; }
+        video { border: 3px solid #fff; }
+    </style>
+</head>
+<body>
+    <script defer src="face-api.min.js"></script>
+    <script defer src="script.js"></script>
+
+    <video id="video" width="720" height="560" autoplay muted></video>
+</body>
+</html>
